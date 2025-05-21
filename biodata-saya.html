@@ -4,222 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil Biodata Saya</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        /* Section Menu */
-        .menu {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        .menu ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .menu ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        .menu ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .menu ul li a:hover {
-            color: #ffd700;
-        }
-
-        /* Section Judul & Gambar */
-        .header-section {
-            display: flex;
-            align-items: center;
-            padding: 40px 0;
-            border-bottom: 1px solid #eee;
-        }
-        .header-section .title-left {
-            flex: 1;
-            text-align: left;
-        }
-        .header-section .title-left h1 {
-            margin: 0;
-            font-size: 3em;
-            color: #333;
-        }
-        .header-section .image-right {
-            flex: 1;
-            text-align: right;
-        }
-        .header-section .image-right img {
-            max-width: 250px;
-            height: auto;
-            border-radius: 50%;
-            border: 5px solid #ddd;
-        }
-
-        /* Section Biodata */
-        .biodata-section {
-            padding: 40px 0;
-            border-bottom: 1px solid #eee;
-        }
-        .biodata-section h2 {
-            text-align: center;
-            margin-bottom: 30px;
-            color: #555;
-        }
-        .biodata-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Menggunakan auto-fit untuk responsif */
-            gap: 20px;
-        }
-        .biodata-box {
-            background: #f9f9f9;
-            border: 1px solid #ddd;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-            border-radius: 8px;
-        }
-        .biodata-box h3 {
-            margin-top: 0;
-            color: #007bff;
-        }
-        .biodata-box p {
-            font-size: 0.95em;
-            line-height: 1.6;
-        }
-
-        /* Section Portofolio */
-        .portfolio-section {
-            padding: 40px 0;
-        }
-        .portfolio-section h2 {
-            text-align: center;
-            margin-bottom: 30px;
-            color: #555;
-        }
-        .portfolio-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        .portfolio-table th, .portfolio-table td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            text-align: left;
-        }
-        .portfolio-table th {
-            background-color: #007bff;
-            color: white;
-            font-weight: bold;
-        }
-        .portfolio-table tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-        .portfolio-table tr:hover {
-            background-color: #ddd;
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="menu">
-            <ul>
-                <li><a href="#home">Beranda</a></li>
-                <li><a href="#biodata">Biodata</a></li>
-                <li><a href="#portofolio">Portofolio</a></li>
-                <li><a href="#kontak">Kontak</a></li>
-            </ul>
-        </div>
 
-        <div class="header-section" id="home">
-            <div class="title-left">
+    <table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="#CCCCCC">
+        <tr>
+            <td align="center"><a href="#home">Beranda</a></td>
+            <td align="center"><a href="#biodata">Biodata</a></td>
+            <td align="center"><a href="#portofolio">Portofolio</a></td>
+            <td align="center"><a href="#kontak">Kontak</a></td>
+        </tr>
+    </table>
+    <br>
+
+    <a name="home"></a>
+    <table width="80%" border="0" cellpadding="20" cellspacing="0" align="center">
+        <tr>
+            <td width="60%" valign="top">
                 <h1>Halo, Saya **[Nama Lengkap Anda]**</h1>
                 <p>Seorang **[Profesi/Keahlian Anda]**</p>
-            </div>
-            <div class="image-right">
-                <img src="https://via.placeholder.com/250" alt="Foto Profil Anda">
-                </div>
-        </div>
+            </td>
+            <td width="40%" align="right" valign="top">
+                <img src="https://via.placeholder.com/200" alt="Foto Profil Anda" width="200" height="200" border="2">
+                </td>
+        </tr>
+    </table>
+    <hr width="80%">
+    <br>
 
-        <div class="biodata-section" id="biodata">
-            <h2>Biodata Singkat</h2>
-            <div class="biodata-grid">
-                <div class="biodata-box">
-                    <h3>Nama Lengkap</h3>
-                    <p>[Nama Lengkap Anda]</p>
-                </div>
-                <div class="biodata-box">
-                    <h3>Tanggal Lahir</h3>
-                    <p>[Tanggal Lahir Anda]</p>
-                </div>
-                <div class="biodata-box">
-                    <h3>Alamat</h3>
-                    <p>[Alamat Anda]</p>
-                </div>
-                <div class="biodata-box">
-                    <h3>Email</h3>
-                    <p>[Email Anda]</p>
-                </div>
-                <div class="biodata-box">
-                    <h3>Telepon</h3>
-                    <p>[Nomor Telepon Anda]</p>
-                </div>
-                <div class="biodata-box">
-                    <h3>Pendidikan Terakhir</h3>
-                    <p>[Pendidikan Terakhir Anda]</p>
-                </div>
-            </div>
-        </div>
+    <a name="biodata"></a>
+    <table width="80%" border="0" cellpadding="15" cellspacing="10" align="center">
+        <tr>
+            <td colspan="3" align="center"><h2>Biodata Singkat</h2></td>
+        </tr>
+        <tr>
+            <td width="33%" valign="top" bgcolor="#F0F0F0" border="1">
+                <h3>Nama Lengkap</h3>
+                <p>[Nama Lengkap Anda]</p>
+            </td>
+            <td width="33%" valign="top" bgcolor="#F0F0F0" border="1">
+                <h3>Tanggal Lahir</h3>
+                <p>[Tanggal Lahir Anda]</p>
+            </td>
+            <td width="33%" valign="top" bgcolor="#F0F0F0" border="1">
+                <h3>Alamat</h3>
+                <p>[Alamat Anda]</p>
+            </td>
+        </tr>
+        <tr>
+            <td width="33%" valign="top" bgcolor="#F0F0F0" border="1">
+                <h3>Email</h3>
+                <p>[Email Anda]</p>
+            </td>
+            <td width="33%" valign="top" bgcolor="#F0F0F0" border="1">
+                <h3>Telepon</h3>
+                <p>[Nomor Telepon Anda]</p>
+            </td>
+            <td width="33%" valign="top" bgcolor="#F0F0F0" border="1">
+                <h3>Pendidikan Terakhir</h3>
+                <p>[Pendidikan Terakhir Anda]</p>
+            </td>
+        </tr>
+    </table>
+    <hr width="80%">
+    <br>
 
-        <div class="portfolio-section" id="portofolio">
-            <h2>Portofolio</h2>
-            <table class="portfolio-table">
-                <thead>
-                    <tr>
-                        <th>Proyek</th>
-                        <th>Deskripsi</th>
-                        <th>Tahun</th>
-                        <th>Link</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>[Nama Proyek 1]</td>
-                        <td>[Deskripsi singkat Proyek 1]</td>
-                        <td>[Tahun Proyek 1]</td>
-                        <td><a href="#" target="_blank">Lihat Proyek</a></td>
-                    </tr>
-                    <tr>
-                        <td>[Nama Proyek 2]</td>
-                        <td>[Deskripsi singkat Proyek 2]</td>
-                        <td>[Tahun Proyek 2]</td>
-                        <td><a href="#" target="_blank">Lihat Proyek</a></td>
-                    </tr>
-                    <tr>
-                        <td>[Nama Proyek 3]</td>
-                        <td>[Deskripsi singkat Proyek 3]</td>
-                        <td>[Tahun Proyek 3]</td>
-                        <td><a href="#" target="_blank">Lihat Proyek</a></td>
-                    </tr>
-                    </tbody>
-            </table>
-        </div>
-    </div>
+    <a name="portofolio"></a>
+    <table width="80%" border="1" cellpadding="10" cellspacing="0" align="center">
+        <tr>
+            <td colspan="4" align="center" bgcolor="#CCCCCC"><h2>Portofolio</h2></td>
+        </tr>
+        <tr>
+            <th bgcolor="#DDDDDD">Proyek</th>
+            <th bgcolor="#DDDDDD">Deskripsi</th>
+            <th bgcolor="#DDDDDD">Tahun</th>
+            <th bgcolor="#DDDDDD">Link</th>
+        </tr>
+        <tr>
+            <td>[Nama Proyek 1]</td>
+            <td>[Deskripsi singkat Proyek 1]</td>
+            <td>[Tahun Proyek 1]</td>
+            <td><a href="#" target="_blank">Lihat Proyek</a></td>
+        </tr>
+        <tr>
+            <td>[Nama Proyek 2]</td>
+            <td>[Deskripsi singkat Proyek 2]</td>
+            <td>[Tahun Proyek 2]</td>
+            <td><a href="#" target="_blank">Lihat Proyek</a></td>
+        </tr>
+        <tr>
+            <td>[Nama Proyek 3]</td>
+            <td>[Deskripsi singkat Proyek 3]</td>
+            <td>[Tahun Proyek 3]</td>
+            <td><a href="#" target="_blank">Lihat Proyek</a></td>
+        </tr>
+        </table>
+    <br>
+
+    <a name="kontak"></a>
+    <table width="80%" border="0" cellpadding="10" cellspacing="0" align="center">
+        <tr>
+            <td align="center">
+                <h3>Kontak Saya</h3>
+                <p>Email: [Email Anda] | Telepon: [Nomor Telepon Anda]</p>
+            </td>
+        </tr>
+    </table>
+
 </body>
 </html>
