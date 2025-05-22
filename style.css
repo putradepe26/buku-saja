@@ -1,0 +1,349 @@
+    body 
+    {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f2f5; /* Abu2 terang */
+        color: #333;
+        line-height: 1.6;
+    }   
+    .container
+    {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #ffffff;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+    }
+
+    /* --- Section Menu --- */
+    .navbar 
+    {
+        background-color: #4CAF50; /* Green */
+        padding: 15px 0;
+        border-radius: 8px;
+        margin-bottom: 30px;
+    }
+
+    .navbar ul 
+    {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex; /* Flexbox for horizontal menu */
+        justify-content: center;
+    }
+    .navbar ul li 
+    {
+       margin: 0 25px;
+    }
+    .navbar ul li a 
+    {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1em;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+    .navbar ul li a:hover 
+    {
+        color: #FFEB3B; /* Yellow on hover */
+        transform: translateY(-2px);
+    }
+
+    /* --- Section Judul & Gambar --- */
+    .hero-section 
+    {
+        display: flex; /* Flexbox for left-right layout */
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px 0;
+        background: linear-gradient(to right, #6A11CB, #2575FC); /* Gradient background */
+        color: white;
+        border-radius: 10px;
+        margin-bottom: 40px;
+        flex-wrap: wrap; /* Allow wrapping on small screens */
+    }
+    .hero-content 
+    {
+        flex: 2; /* Takes more space */
+        padding-left: 50px;
+        text-align: left;
+        min-width: 300px; /* Minimum width before wrapping */
+    }    
+    .hero-content h1 
+    {
+        font-size: 3.8em;
+        margin-bottom: 10px;
+        line-height: 1.1;
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    }
+
+    .hero-content p 
+    {
+        font-size: 1.5em;
+        opacity: 0.9;
+    }
+
+    .hero-image 
+    {
+        flex: 1; /* Takes less space */
+        text-align: right;
+        padding-right: 50px;
+        min-width: 200px; /* Minimum width before wrapping */
+    }
+
+    .hero-image img
+    {
+        max-width: 250px;
+        height: auto;
+        border-radius: 50%; /* Circular image */
+        border: 8px solid rgba(255, 255, 255, 0.4);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        transition: transform 0.4s ease;
+    }
+
+    .hero-image img:hover 
+    {
+        transform: scale(1.05) rotate(3deg);
+    }
+
+    /* --- Section Biodata (Grid Layout) --- */
+    .biodata-section 
+    {
+        padding: 60px 0;
+        text-align: center;
+        background-color: #e3f2fd; /* Light blue background */
+        border-radius: 10px;
+        margin-bottom: 40px;
+    }
+
+    .biodata-section h2 
+    {
+        font-size: 2.8em;
+        color: #2196F3; /* Blue */
+        margin-bottom: 50px;
+        position: relative;
+        display: inline-block;
+    }
+
+    .biodata-section h2::after 
+    {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 4px;
+        background-color: #2196F3;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 2px;
+    }
+
+    .biodata-grid 
+    {
+        display: grid; /* Grid layout for boxes */
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive columns */
+        gap: 30px; /* Space between boxes */
+        padding: 0 20px;
+    }
+
+    .biodata-box 
+    {
+        background: #ffffff;
+        border: 1px solid #cceeff; /* Light blue border */
+        padding: 30px;
+        text-align: center;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .biodata-box:hover 
+    {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .biodata-box h3 
+    {
+        margin-top: 0;
+        color: #007bff; /* Dodger blue */
+        font-size: 1.6em;
+        margin-bottom: 15px;
+    }
+
+    .biodata-box p 
+    {
+        font-size: 1.1em;
+        color: #555;
+    }
+
+    /* --- Section Portofolio --- */
+    .portfolio-section 
+    {
+        padding: 60px 0;
+        text-align: center;
+        background-color: #fffde7; /* Light yellow background */
+        border-radius: 10px;
+        margin-bottom: 40px;
+    }
+
+    .portfolio-section h2 
+    {
+        font-size: 2.8em;
+        color: #FFC107; /* Amber */
+        margin-bottom: 50px;
+        position: relative;
+        display: inline-block;
+    }
+
+    .portfolio-section h2::after 
+    {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 4px;
+        background-color: #FFC107;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 2px;
+    }
+
+
+    .portfolio-grid 
+    {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns for projects */
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .portfolio-item 
+    {
+        background: #ffffff;
+        border: 1px solid #ffe082; /* Light amber border */
+        padding: 25px;
+        text-align: left;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .portfolio-item:hover 
+    {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .portfolio-item h3 
+    {
+        color: #FFA000; /* Darker amber */
+        font-size: 1.8em;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .portfolio-item p 
+    {
+        font-size: 1.05em;
+        color: #666;
+        margin-bottom: 15px;
+    }
+
+    .portfolio-item a 
+    {
+        display: inline-block;
+        background-color: #FFC107; /* Amber */
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+    }
+
+    .portfolio-item a:hover 
+    {
+        background-color: #FFA000; /* Darker amber on hover */
+    }
+
+    /* --- Footer (Opsional) --- */
+    .footer 
+    {
+        text-align: center;
+        padding: 30px 0;
+        background-color: #333;
+        color: white;
+        border-radius: 10px;
+        margin-top: 40px;
+        font-size: 0.9em;
+    }
+
+    /* --- Buat layar secara responsif --- */
+    @media (max-width: 768px) 
+    {
+        .navbar ul li {
+        margin: 0 10px;
+    }
+
+    .hero-section 
+    {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .hero-content, .hero-image 
+    {
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-image 
+    {
+        order: -1; /* Image appears first on small screens */
+        margin-bottom: 30px;
+    }
+
+    .hero-content h1 
+    {
+        font-size: 2.5em;
+    }
+
+    .hero-content p 
+    {
+        font-size: 1.2em;
+    }
+
+    .biodata-section h2, .portfolio-section h2 
+    {
+        font-size: 2em;
+    }
+
+    .biodata-grid, .portfolio-grid 
+    {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+
+    .container 
+    {
+        margin: 10px;
+        padding: 15px;
+        }
+    }
+
+        @media (max-width: 480px) 
+        {
+            .navbar ul 
+            {
+                flex-direction: column;
+            }
+            .navbar ul li 
+            {
+                margin: 10px 0;
+            }
+        }      

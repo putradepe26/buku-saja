@@ -3,113 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Biodata Saya</title>
+    <title>Biodata Saya</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <nav class="navbar" id="home">
+            <ul>
+                <li><a href="#home">Header</a></li>
+                <li><a href="#biodata">Biodata</a></li>
+                <li><a href="#portofolio">Portofolio</a></li>
+            </ul>
+        </nav>
 
-    <table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="#CCCCCC">
-        <tr>
-            <td align="center"><a href="#home">Beranda</a></td>
-            <td align="center"><a href="#biodata">Biodata</a></td>
-            <td align="center"><a href="#portofolio">Portofolio</a></td>
-            <td align="center"><a href="#kontak">Kontak</a></td>
-        </tr>
-    </table>
-    <br>
-
-    <a name="home"></a>
-    <table width="80%" border="0" cellpadding="20" cellspacing="0" align="center">
-        <tr>
-            <td width="60%" valign="top">
+        <section class="hero-section">
+            <div class="hero-content">
                 <h1>Halo, Saya **[Nama Lengkap Anda]**</h1>
                 <p>Seorang **[Profesi/Keahlian Anda]**</p>
-            </td>
-            <td width="40%" align="right" valign="top">
-                <img src="https://via.placeholder.com/200" alt="Foto Profil Anda" width="200" height="200" border="2">
-                </td>
-        </tr>
-    </table>
-    <hr width="80%">
-    <br>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Foto Profil Anda">
+                </div>
+        </section>
 
-    <a name="biodata"></a>
-    <table width="80%" border="0" cellpadding="15" cellspacing="10" align="center">
-        <tr>
-            <td colspan="3" align="center"><h2>Biodata Singkat</h2></td>
-        </tr>
-        <tr>
-            <td width="33%" valign="top" bgcolor="#F0F0F0" border="1">
-                <h3>Nama Lengkap</h3>
-                <p>[Nama Lengkap Anda]</p>
-            </td>
-            <td width="33%" valign="top" bgcolor="#F0F0F0" border="1">
-                <h3>Tanggal Lahir</h3>
-                <p>[Tanggal Lahir Anda]</p>
-            </td>
-            <td width="33%" valign="top" bgcolor="#F0F0F0" border="1">
-                <h3>Alamat</h3>
-                <p>[Alamat Anda]</p>
-            </td>
-        </tr>
-        <tr>
-            <td width="33%" valign="top" bgcolor="#F0F0F0" border="1">
-                <h3>Email</h3>
-                <p>[Email Anda]</p>
-            </td>
-            <td width="33%" valign="top" bgcolor="#F0F0F0" border="1">
-                <h3>Telepon</h3>
-                <p>[Nomor Telepon Anda]</p>
-            </td>
-            <td width="33%" valign="top" bgcolor="#F0F0F0" border="1">
-                <h3>Pendidikan Terakhir</h3>
-                <p>[Pendidikan Terakhir Anda]</p>
-            </td>
-        </tr>
-    </table>
-    <hr width="80%">
-    <br>
+        <section class="biodata-section" id="biodata">
+            <h2>Biodata Singkat</h2>
+            <div class="biodata-grid">
+                <div class="biodata-box">
+                    <h3>Nama Lengkap</h3>
+                    <p>**[Nama Lengkap Anda]**</p>
+                </div>
+                <div class="biodata-box">
+                    <h3>Tanggal Lahir</h3>
+                    <p>**[Tanggal Lahir Anda, misal: 1 Januari 1990]**</p>
+                </div>
+                <div class="biodata-box">
+                    <h3>Alamat</h3>
+                    <p>**[Alamat Anda, misal: Jl. Contoh No. 123, Kota Anda]**</p>
+                </div>
+                <div class="biodata-box">
+                    <h3>Email</h3>
+                    <p>**[email@example.com]**</p>
+                </div>
+                <div class="biodata-box">
+                    <h3>Telepon</h3>
+                    <p>**[+62 812 3456 7890]**</p>
+                </div>
+                <div class="biodata-box">
+                    <h3>Pendidikan Terakhir</h3>
+                    <p>**[Sarjana Teknik Informatika, Universitas X]**</p>
+                </div>
+            </div>
+        </section>
 
-    <a name="portofolio"></a>
-    <table width="80%" border="1" cellpadding="10" cellspacing="0" align="center">
-        <tr>
-            <td colspan="4" align="center" bgcolor="#CCCCCC"><h2>Portofolio</h2></td>
-        </tr>
-        <tr>
-            <th bgcolor="#DDDDDD">Proyek</th>
-            <th bgcolor="#DDDDDD">Deskripsi</th>
-            <th bgcolor="#DDDDDD">Tahun</th>
-            <th bgcolor="#DDDDDD">Link</th>
-        </tr>
-        <tr>
-            <td>[Nama Proyek 1]</td>
-            <td>[Deskripsi singkat Proyek 1]</td>
-            <td>[Tahun Proyek 1]</td>
-            <td><a href="#" target="_blank">Lihat Proyek</a></td>
-        </tr>
-        <tr>
-            <td>[Nama Proyek 2]</td>
-            <td>[Deskripsi singkat Proyek 2]</td>
-            <td>[Tahun Proyek 2]</td>
-            <td><a href="#" target="_blank">Lihat Proyek</a></td>
-        </tr>
-        <tr>
-            <td>[Nama Proyek 3]</td>
-            <td>[Deskripsi singkat Proyek 3]</td>
-            <td>[Tahun Proyek 3]</td>
-            <td><a href="#" target="_blank">Lihat Proyek</a></td>
-        </tr>
-        </table>
-    <br>
+        <section class="portfolio-section" id="portofolio">
+            <h2>Portofolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <h3>[Nama Proyek 1]</h3>
+                    <p>Deskripsi singkat proyek ini. Proyek ini melibatkan pengembangan website e-commerce menggunakan React dan Node.js.</p>
+                    <p><strong>Tahun:</strong> 2023</p>
+                    <a href="#" target="_blank">Lihat Proyek</a>
+                </div>
+                <div class="portfolio-item">
+                    <h3>[Nama Proyek 2]</h3>
+                    <p>Aplikasi mobile untuk manajemen tugas pribadi dengan fitur notifikasi dan sinkronisasi cloud.</p>
+                    <p><strong>Tahun:</strong> 2022</p>
+                    <a href="#" target="_blank">Lihat Proyek</a>
+                </div>
+                <div class="portfolio-item">
+                    <h3>[Nama Proyek 3]</h3>
+                    <p>Desain UI/UX untuk platform edukasi online, berfokus pada pengalaman pengguna yang intuitif dan menarik.</p>
+                    <p><strong>Tahun:</strong> 2021</p>
+                    <a href="#" target="_blank">Lihat Proyek</a>
+                </div>
+                <div class="portfolio-item">
+                    <h3>[Nama Proyek 4]</h3>
+                    <p>Sistem inventaris berbasis web untuk bisnis kecil, dilengkapi dengan fitur pelaporan dan analisis data.</p>
+                    <p><strong>Tahun:</strong> 2020</p>
+                    <a href="#" target="_blank">Lihat Proyek</a>
+                </div>
+                </div>
+        </section>
+    </div>
 
-    <a name="kontak"></a>
-    <table width="80%" border="0" cellpadding="10" cellspacing="0" align="center">
-        <tr>
-            <td align="center">
-                <h3>Kontak Saya</h3>
-                <p>Email: [Email Anda] | Telepon: [Nomor Telepon Anda]</p>
-            </td>
-        </tr>
-    </table>
+    <footer class="footer" id="kontak">
+        <p>&copy; 2025 **[Nama Lengkap Anda]**. Hak Cipta Dilindungi Undang-Undang.</p>
+        <p>Kontak: **[email@example.com]** | **[+62 812 3456 7890]**</p>
+    </footer>
 
 </body>
 </html>
