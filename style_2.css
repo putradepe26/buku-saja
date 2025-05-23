@@ -1,0 +1,111 @@
+body {
+            font-family: 'Poppins', sans-serif; /* Menggunakan Poppins jika tersedia, atau font default Bootstrap */
+            background-color: #f8f9fa; /* Warna latar belakang umum */
+        }
+        .navbar {
+            background-color: #0d6efd !important; /* Warna biru Bootstrap */
+            padding: 1rem 0;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+            font-weight: 600;
+        }
+        .navbar-nav .nav-link.active,
+        .navbar-nav .nav-link:hover {
+            color: #ffc107 !important; /* Warna kuning untuk hover/active */
+        }
+
+        .hero-section {
+            background: linear-gradient(45deg, #0d6efd, #8d8796); /* Gradien biru-ungu */
+            color: white;
+            padding: 80px 0;
+            border-radius: 15px;
+            margin-top: 30px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        .hero-image img {
+            border-radius: 50%;
+            border: 8px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            max-width: 250px;
+            height: auto;
+            object-fit: cover; /* Pastikan gambar mengisi lingkaran */
+        }
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+        }
+        .hero-content p {
+            font-size: 1.5rem;
+            opacity: 0.9;
+        }
+
+        .section-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #0d6efd;
+            margin-bottom: 50px;
+            position: relative;
+            display: inline-block;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 5px;
+            background-color: #ffc107;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 5px;
+        }
+
+        .biodata-section .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .biodata-section .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+        .biodata-section .card-title {
+            color: #0dcaf0; /* Warna info Bootstrap */
+        }
+
+        .portfolio-section .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .portfolio-section .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+        .portfolio-section .card-title {
+            color: #fd7e14; /* Warna warning Bootstrap */
+        }
+
+        .footer {
+            background-color: #343a40; /* Dark grey */
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+
+        /* Styling untuk Modal */
+        .modal-header {
+            background-color: #0d6efd;
+            color: white;
+            border-top-left-radius: calc(0.5rem - 1px);
+            border-top-right-radius: calc(0.5rem - 1px);
+        }
+        .modal-body img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
