@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Produk Davipp</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; }
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .product-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product-card img {
+            max-width: 100%;
+            height: 200px; /* Tinggi gambar yang konsisten */
+            object-fit: cover; /* Memastikan gambar mengisi area tanpa terdistorsi */
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .product-card h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .product-card p {
+            font-size: 0.9em;
+            color: #555;
+        }
+        .product-card .price {
+            font-weight: bold;
+            color: #e67e22;
+            margin-top: 10px;
+        }
+        .filters {
+            margin-bottom: 20px;
+        }
+        .filters button {
+            padding: 10px 15px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            background-color: #f0f0f0;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .filters button.active {
+            background-color: #3498db;
+            color: white;
+            border-color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <h1>Davipp Online Shop</h1>
+
+    <div class="filters">
+        <button data-category="all" class="active">Semua Kategori</button>
+        <button data-category="pakaian pria">Pakaian Pria</button>
+        <button data-category="pakaian wanita">Pakaian Wanita</button>
+        <button data-category="jaket">Jaket</button>
+        <button data-category="sepatu">Sepatu</button>
+    </div>
+
+    <div id="product-list" class="product-container">
+        </div>
+
+    <script src="e-commerce.js"></script>
+</body>
+</html>
