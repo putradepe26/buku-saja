@@ -1,12 +1,15 @@
 <?php
-$host = "localhost"; // Ganti jika database Anda di server lain
-$user = "root"; // Ganti dengan nama pengguna database Anda
-$pass = ""; // Ganti dengan kata sandi database Anda
-$db = "e-commerce"; // Nama database yang Anda buat
+$servername = "localhost"; // Ganti jika host database Anda berbeda
+$username = "root";     // Ganti dengan username database Anda
+$password = "";         // Ganti dengan password database Anda (kosong jika tidak ada)
+$dbname = "e-commerce"; // Nama database Anda
 
-$koneksi = mysqli_connect($host, $user, $pass, $db);
+// Buat koneksi
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-if (!$koneksi) {
-    die("Koneksi gagal: " . mysqli_connect_error());
+// Periksa koneksi
+if ($conn->connect_error) {
+    die("Koneksi gagal: " . $conn->connect_error);
 }
+// echo "Koneksi berhasil"; // Uncomment ini untuk tes koneksi awal
 ?>
